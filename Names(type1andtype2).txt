@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace List_Practice2
+{
+    class Program
+    {
+        static void Main()
+        {
+            List<string> studentNames = new List<string>() { "Smoo, Joe", "James, Carol" , "Jones, Brandon," , "James, Henry"};
+            studentNames.Add("Johnson, Mary");
+            studentNames.Add("Love, Michelle");
+            studentNames.Add("Smith, Mark");
+            studentNames.Add("Gross, Lance");
+            studentNames.Add("Felton, Lamar");
+
+            foreach (string name in studentNames)
+            {
+                Console.WriteLine(name);
+            }
+            Console.ReadLine();
+        }
+    }
+}

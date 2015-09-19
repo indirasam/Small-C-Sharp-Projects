@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace List_Practice2
+{
+    class Program
+    {
+        static void Main()
+        {
+           int[] example = new int[3];
+            example[0] = 3;
+            example[1] = 5; 
+            example[2] = 7;
+
+            List<int> list = new List<int>(example);
+            Console.WriteLine(list.Count);
+            Console.ReadLine();
+        }
+    }
+}

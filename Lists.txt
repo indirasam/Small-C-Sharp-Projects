@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ListPractice
+{
+    class Program
+    {
+        static void Main()
+        {
+
+	List<int> list = new List<int>() { 2, 3, 5, 7 };// creates a new list 
+
+            foreach(int num in list)// loop that will do something to each int inside of list
+            {
+                Console.WriteLine(num);//command being applied by the loop
+            }
+                     Console.ReadLine(); //keeps output screen open
+        }
+    }
+}

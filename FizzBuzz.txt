@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FizzBuzz_Indira
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        int FizzX;
+        int BuzzY;
+        int countTo;
+        int increment;
+
+
+        FizzX = 2;
+        BuzzY = 3;
+        countTo = 50;
+        increment = 1;
+
+        for (increment = 1; increment <= countTo; increment++)
+        {
+            if (increment%FizzX==0 && increment%BuzzY==0){System.Console.Write("FB ");}
+            else if (increment%FizzX==0){System.Console.Write("F ");}
+            else if (increment%BuzzY==0){System.Console.Write("B ");}
+
+            else
+            {
+                System.Console.Write(increment.ToString() + " ");
+            }
+        }
+            System.Console.ReadLine();
+
+
+        }
+    }
+}

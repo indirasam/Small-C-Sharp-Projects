@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SumOfInts
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            
+            int[] myFavNums = {5,10,15,20};
+            int counter;
+            int result = 0;
+            for (counter = 0; counter < myFavNums.Length; counter++)
+            {
+                result += myFavNums[counter];
+            }
+            Console.WriteLine(result);
+            Console.ReadLine();
+        }
+    }
+}

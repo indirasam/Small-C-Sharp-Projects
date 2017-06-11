@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace chall
+{
+    class Program
+    {
+        
+        static int Prime(int num)
+        {
+            int i;
+            for (i = 2; i < num; i++)
+            {
+                if (num % i == 0)
+                {
+                    return 0;
+                }
+            }
+            if (i == num)
+            {
+                return 1;
+            }
+           return 1;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Pick a number greater than 1:");
+            int usernumber = Convert.ToInt32(Console.ReadLine());
+            int result = Prime(usernumber);
+            if (result == 0)
+            {
+                Console.WriteLine("false");
+            }
+            else
+            {
+                Console.WriteLine("true");
+            }
+                Console.ReadLine();
+        }
+    }
+}
